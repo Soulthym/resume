@@ -1,0 +1,300 @@
+.de FILLED_BOX
+.\" FILLED BOX Macro
+.\" syntax:
+.\" .FILLED_BOX string thickness outline_color fill_color text_color
+.nr @wd \w'\\$1'
+.gcolor \\$3
+.fcolor \\$4
+\h'-.4m'\v'(.4m - \\n[rsb]u)'
+\Z'\D't \\$2p''\
+\Z'\D'P (\\n[@wd]u + .8m) 0 0 -(\\n[rst]u - \\n[rsb]u + .8m) -(\\n[@wd]u + .8m) 0 0 (\\n[rst]u - \\n[rsb]u + .8m)''\
+\Z'\D'p (\\n[@wd]u + .8m) 0 0 -(\\n[rst]u - \\n[rsb]u + .8m) -(\\n[@wd]u + .8m) 0 0 (\\n[rst]u - \\n[rsb]u + .8m)''\
+\h'.4m'\v'-(.4m - \\n[rsb]u)'\
+\m[\\$5]\\$1\m[]\
+\h'.4m'
+\M[]
+..
+.defcolor lightpurple rgb 0.8f 0.5f 0.8f
+.defcolor darkpurple rgb 0.3f 0.2f 0.3f
+.de CUST_HEAD
+.sp 1
+.FILLED_BOX "\fB            \\$1            \fP" 2 darkpurple lightpurple white
+.sp .5
+..
+.\" -*- mode: troff; coding: utf-8; -*-
+.\".TITLE           "CV"
+.\" .AUTHOR          "Thybault Alabarbe"
+.gcolor darkpurple
+\h'22'
+\v'3'
+\D't .5p'
+\D'p 0 55'
+.DOCTYPE         DEFAULT
+.COPYSTYLE       FINAL
+.PRINTSTYLE      TYPESET
+.PAPER           A4
+.COLUMNS 2 30p
+.DOCHEADER OFF
+.PT_SIZE 9
+.LS 11
+.L_MARGIN 40p
+.R_MARGIN 40p
+.QUAD JUSTIFY
+.NEWCOLOR blue #0000FF
+.START
+.PAGINATE NO
+.PSPIC -R "ID.eps" 1
+.sp -7
+.mk tpos
+.FILLED_BOX "\fB            THYBAULT ALABARBE            \fP" 2 darkpurple lightpurple white
+.sp .5
+.PP
+36 avenue Paul Langevin,
+.br
+Fontenay-aux-Roses, 92260, FR
+.br
+\f[B]email\f[]: thybault.alabarbe@gmail.com
+.br
+\f[B]GitHub\f[]: https://github.com/Soulthym
+.
+.
+.
+.CUST_HEAD "FORMATION"
+.br
+- \f[B]2015-2020\f[]
+\[->]
+Ivry-sur-Seine,
+ESIEA:
+.TI 10p
+\f[B]Ecole d'Ingénieurs du Monde Numérique\f[]: 5\*[SUP]ème\*[SUPX] année
+.br
+.
+.
+.
+- \f[B]2018\f[]
+\[->]
+Ivry-sur-Seine,
+EISEA:
+.TI 10p
+Companieros et SII, \f[B]Label Handimanager\f[], management de personnes handicapées
+.br
+.
+.
+.
+- \f[B]2016\f[]
+\[->]
+Ivry-sur-Seine,
+ESIEA:
+.TI 10p
+\f[B]TOEIC\f[]-915
+.br
+.
+.
+.
+- \f[B]2016\f[]
+\[->]
+Igny,
+Lycée Saint-Nicolas:
+.TI 10p
+\f[B]BAFA\f[] 1
+.br
+.
+.
+.
+- \f[B]2015\f[]
+\[->]
+Bourg-la-Reine,
+Institut Notre-Dame:
+.TI 10p
+\f[B]Baccalauréat Scientifique\f[] (SVT) avec mention
+.br
+.
+.
+.
+- \f[B]2010-2012\f[]
+\[->]
+Bourg-la-Reine,
+Institut Notre-Dame:
+.TI 10p
+\f[B]Cambridge\f[] (PET et FCE)
+.
+.
+.
+.CUST_HEAD "                              LANGUES                              "
+- \f[B]Bilingue\f[]: Anglais
+.br
+- \f[B]Courant\f[]: Espagnol
+.br
+- \f[B]Débutant\f[]: Japonais, Grec Ancien, Latin
+.
+.
+.
+.CUST_HEAD "                              PROJETS                                "
+- \f[B]2018-2019\f[]
+\[->]
+TEEC-Eureka Effect
+.TI 10p
+Détection de la comprehension et de la propagation de l'information dans un groupe d'étudiants lors de sessions d'E-learning
+.TI 10p
+\*[SLANT]Publication à \f[B]ACII2019\f[]\*[SLANTX] et Conférence
+.br 
+- \f[B]2018-2019\f[]
+\[->]
+Inwibe
+.TI 10p
+Création d'un moteur de recherche utilisant le traitement naturel du langage pour du matching Corporate/Startup
+.br
+- \f[B]2018\f[]
+\[->]
+bash-3D-viz
+(\*[SLANT]POSIX shell, bash, awk, sed\*[SLANTX])
+.TI 10p
+POC: Manipulation d'objets 3D dans le terminal
+.br
+- \f[B]2018\f[]
+\[->]
+Smart Touch
+(\*[SLANT]Python, OpenCV\*[SLANTX])
+.TI 10p
+Projecteur Tactile à commande vocale
+.br
+.
+.
+.
+.CUST_HEAD "                        COMPÉTENCES                         "
+\f[B]Logiciels:\f[] 
+Bureautique,
+Vim,
+LaTeX & Groff
+.br
+\f[B]Système d'exploitation:\f[]
+Linux
+.br
+\f[B]Programmation:\f[]
+Langages maitrisés:
+.TI 10p
+C, python, Mathematica, POSIX shell, awk
+.br
+En apprentissage:
+.TI 10p
+C++, sed, vimscript, Haskell, RUST
+.
+.
+.
+.CUST_HEAD "                             INTÉRÊTS                              "
+\f[B]Cirque\f[] (14 ans): Jonglage
+.br
+\f[B]Musique\f[] (4 ans, autodidacte): Guitare, Basse
+.br
+\f[B]Rubik's Cube\f[]: Speed Cubing
+.br
+\f[B]Magie\f[]: Manipulation des cartes
+.br
+\f[B]Programmation\f[]
+.br
+\f[B]Astronomie\f[]
+.
+.
+.
+.
+.br
+.sp 3
+\v'1'
+.FILLED_BOX " \ \ \ \ \fBEXP.\ PROFESSIONNELLES\ &\ ASSOCIATIVES\fP\ \ \ \ " 2 darkpurple lightpurple white
+.sp 1
+.sp 1.5
+\[->]\f[B]2018-2019\f[]
+\[->]
+Ivry-sur-Seine & Bangkok (Thailande)
+.TI 10p
+\f[B]Laboratoire\f[]: ESIEA-\f[B]LDR\f[] (machine Learning, big Data, mobile Robotics) & \f[B]KMUTT\f[] (King Mongkut's University of Technology Thonburi)
+.TI 10p
+\f[B]Poste\f[]: "Espoir Recherche" en Intelligence Artificielle
+.TI 10p
+\f[B]Mission\f[]: \f[B]Technologies pour l'Education et l'Enseignement en Contexte\f[]-Création d'un tracker et extracteur d'émotions pour faciliter la détection et l'analyse de la propagation de la compréhension chez les étudiants
+.TI 10p
+\f[B]Publications & Conférence\f[]: ACII2019 - \*[SLANT]"Joint Analysis of verbal and nonverbal interactions in collaborative E-Learning"\*[SLANTX] (Piot, Alabarbe et al.)
+.TI 10p
+\f[B]Outils\f[]: python, pytorch, TensorFlow, Keras, OpenCV, Siamese Networks, Variational Auto-Encoders
+.br
+\[->]\f[B]2018-2019\f[]
+\[->]
+Paris
+.TI 10p
+\f[B]Freelance\f[]: \f[B]Inwibe\f[]
+.TI 10p
+\f[B]Poste\f[]: Développeur en Traitement du Langage Naturel (NLP) & Maintenance Web
+.TI 10p
+\f[B]Missions\f[]: Développer un moteur de recherche basé sur les technologies du Traitement du Language Naturel, pour favoriser la relation Entreprise/Start-Up, et maintenance de la plateforme WEB.
+.TI 10p
+\f[B]Outils\f[]: python, gensim, spaCy, TensorFlow, Ruby on Rails, Django
+.br
+\[->]\f[B]2018-2019\f[]
+\[->]
+Ivry-sur-Seine
+.TI 10p
+\f[B]Association\f[]: ESIEA-\f[B]DTRE\f[] (Département Robotique)
+.TI 10p
+\f[B]Poste\f[]: Membre actif
+.TI 10p
+\f[B]Mission\f[]: Développement d'un robot aux déplacements autonomes, rénovation d'un oscilloscope en écran digital.
+.br
+\[->]\f[B]2017-2018\f[]
+\[->]
+Ivry-sur-Seine
+.TI 10p
+\f[B]Laboratoire\f[]: ESIEA-\f[B]LDR\f[] (machine Learning, big Data, mobile Robotics)
+.TI 10p
+\f[B]Poste\f[]: "Espoir Recherche" en Intelligence Artificielle
+.TI 10p
+\f[B]Mission\f[]: Application de méthodes d'apprentissage par transfert pour la classification d'émotions.
+.TI 10p
+\f[B]Outils\f[]: python, OpenCV, TensorFlow, Keras, VGGFace.
+.br
+\[->]\f[B]2016-2019\f[]
+\[->]
+Ivry-sur-Seine
+.TI 10p
+\f[B]Association\f[]: ESIEA-\f[B]BDA\f[] (Bureau des Arts)
+.TI 10p
+\f[B]Poste\f[]: Membre actif
+.TI 10p
+\f[B]Missions\f[]: Dispense de cours de dessin, basse, magie, présentation de spectacles de magie, participation aux activités de l'association et à leur communication.
+.br
+\[->]\f[B]2016\f[] (1 mois)
+\[->]
+Paris
+.TI 10p
+\f[B]Laboratoire\f[]: ESIEA-\f[B]ARNUM\f[] (Arts et Numérique)
+.TI 10p
+\f[B]Poste\f[]: Chercheur en Intelligence Artificielle
+.TI 10p
+\f[B]Mission\f[]: Recherche sur les technologies du Deep Learning pour la compréhension et la génération de texte et d'images.
+.TI 10p
+\f[B]Outils\f[]: Python, TensorFlow, Keras, Caffe, Theano
+.br
+\[->]\f[B]2015\f[] (2 mois)
+\[->]
+Bagneux
+.TI 10p
+\f[B]Association\f[]: \f[B]PPCM\f[] (Plus Petit Cirque du Monde)
+.TI 10p
+\f[B]Poste\f[]: Professeur de Jonglage
+.TI 10p
+\f[B]Mission\f[]: Dispense de cours de jonglage à des enfants, dans le cadre d'une action de solidarité.
+.br
+.\".PS
+.\"box thickness 1.5 outline "blue" rad 0.1 "1" "question"
+.\"arrow
+.\"box thickness 1.5 outline "blue" rad 0.1 "2" "debate"
+.\"arrow
+.\"A: box thickness 1.5 outline "blue" rad 0.1 "3" "understanding" width 1.3
+.\"arrow
+.\"box thickness 1.5 outline "blue" rad 0.1 "4" "mutual explanations" width 1.8
+.\"move to last box .s
+.\"spline down then to (1st box.s.x, 1st box.s.y -.5) then up ->
+.\"move to A.n then up
+.\"box thickness 1.5 outline "red" "Detecting the Eureka effect" width 2
+.\"move to last box .s
+.\"arrow color "red" down
+.\".PE
