@@ -174,19 +174,22 @@ Linux
 .br
 \[->]Langages maitrisés:
 .TI 10p
-Axe Parser(40k),
+Axe Parser(40k lignes),
 python(20k),
 asm z80(18k),
-C(5k lignes),
+C(5k),
 Ti-Basic(5k),
-POSIX shell(3k),
+[POSIX] shell(3k),
 Mathematica(2k),
 awk(1k)
 .br
 \[->]En apprentissage:
 .TI 10p
+VHDL(8k),
+ruby(7k),
 C++(7k),
 vimscript(2k),
+java(900),
 sed(500),
 Haskell(200),
 RUST(200)
