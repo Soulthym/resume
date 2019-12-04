@@ -165,19 +165,31 @@ Projecteur Tactile à commande vocale
 \f[B]Logiciels:\f[] 
 Bureautique,
 Vim,
-LaTeX & Groff
+LaTeX (1k lignes) & Groff (2.5k)
 .br
 \f[B]Système d'exploitation:\f[]
 Linux
 .br
-\f[B]Programmation:\f[]
-Langages maitrisés:
-.TI 10p
-C, python, Mathematica, POSIX shell, awk
+\f[B]Programmation\f[] (lignes de codes):
 .br
-En apprentissage:
+\[->]Langages maitrisés:
 .TI 10p
-C++, sed, vimscript, Haskell, RUST
+Axe Parser(40k),
+python(20k),
+asm z80(18k),
+C(5k lignes),
+Ti-Basic(5k),
+POSIX shell(3k),
+Mathematica(2k),
+awk(1k)
+.br
+\[->]En apprentissage:
+.TI 10p
+C++(7k),
+vimscript(2k),
+sed(500),
+Haskell(200),
+RUST(200)
 .
 .
 .
