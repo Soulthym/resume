@@ -74,7 +74,7 @@ ESIEA:
 - \f[B]2018\f[]
 \[->]
 Ivry-sur-Seine,
-EISEA:
+ESIEA:
 .TI 10p
 Companieros et SII, \f[B]Label Handimanager\f[], management de personnes handicapées
 .br
@@ -228,7 +228,7 @@ Ivry-sur-Seine & Bangkok (Thailande)
 .TI 10p
 \f[B]Mission\f[]: \f[B]Technologies pour l'Education et l'Enseignement en Contexte\f[]-Création d'un tracker et extracteur d'émotions pour faciliter la détection et l'analyse de la propagation de la compréhension chez les étudiants
 .TI 10p
-\f[B]Publications & Conférence\f[]: ACII2019 - \*[SLANT]"Joint Analysis of verbal and nonverbal interactions in collaborative E-Learning"\*[SLANTX] (Piot, Alabarbe et al.)
+\f[B]Publication & Conférence\f[]: ACII2019 - \*[SLANT]"Joint Analysis of verbal and nonverbal interactions in collaborative E-Learning"\*[SLANTX] (Piot, Alabarbe et al.)
 .TI 10p
 \f[B]Outils\f[]: python, pytorch, TensorFlow, Keras, OpenCV, Siamese Networks, Variational Auto-Encoders
 .br
