@@ -1,0 +1,315 @@
+.de FILLED_BOX
+.\" FILLED BOX Macro
+.\" syntax:
+.\" .FILLED_BOX string thickness outline_color fill_color text_color
+.nr @wd \w'\\$1'
+.gcolor \\$3
+.fcolor \\$4
+\h'-.4m'\v'(.4m - \\n[rsb]u)'
+\Z'\D't \\$2p''\
+\Z'\D'P (\\n[@wd]u + .8m) 0 0 -(\\n[rst]u - \\n[rsb]u + .8m) -(\\n[@wd]u + .8m) 0 0 (\\n[rst]u - \\n[rsb]u + .8m)''\
+\Z'\D'p (\\n[@wd]u + .8m) 0 0 -(\\n[rst]u - \\n[rsb]u + .8m) -(\\n[@wd]u + .8m) 0 0 (\\n[rst]u - \\n[rsb]u + .8m)''\
+\h'.4m'\v'-(.4m - \\n[rsb]u)'\
+\m[\\$5]\\$1\m[]\
+\h'.4m'
+\M[]
+..
+.ds LaTeX L\v'-.125m'\h'-.325m'\s'-2'A\s'+2'\v'.125m'\h'-.125m'T\h'-.1367m'\v'.200m'E\v'-.200m'\h'-.125m'X
+.defcolor lightpurple rgb 0.8f 0.5f 0.8f
+.defcolor darkpurple rgb 0.3f 0.2f 0.3f
+.de CUST_HEAD
+.sp 1
+.FILLED_BOX "\fB            \\$1            \fP" 2 darkpurple lightpurple white
+.sp .5
+..
+.\" -*- mode: troff; coding: utf-8; -*-
+.\".TITLE           "CV"
+.\" .AUTHOR          "Thybault Alabarbe"
+.gcolor darkpurple
+\h'22'
+\v'3'
+\D't .5p'
+\D'p 0 55'
+.DOCTYPE         DEFAULT
+.COPYSTYLE       FINAL
+.PRINTSTYLE      TYPESET
+.PAPER           A4
+.COLUMNS 2 30p
+.DOCHEADER OFF
+.PT_SIZE 9
+.LS 10.5
+.L_MARGIN 40p
+.R_MARGIN 40p
+.QUAD JUSTIFY
+.NEWCOLOR blue #0000FF
+.START
+.PAGINATE NO
+.PSPIC -R "ID.eps" 1
+.sp -0.5
+.PSPIC -R "ESIEA-logo-EN.eps" .7
+.sp -10.5
+.mk tpos
+.FILLED_BOX "\fB            THYBAULT ALABARBE            \fP" 2 darkpurple lightpurple white
+.sp .5
+.PP
+36 avenue Paul Langevin,
+.br
+Fontenay-aux-Roses, 92260, FR
+.br
+\fBemail\fR: thybault.alabarbe@gmail.com
+.br
+\fBGitHub\fR: https://github.com/Soulthym
+.
+.
+.
+.CUST_HEAD "          EDUCATION          "
+.br
+- \fB2015-2020\fR
+\[->]
+Ivry-sur-Seine (France),
+ESIEA:
+.TI 10p
+\fBGraduate School of Engineering\fR: 5\*[SUP]th\*[SUPX] year
+.br
+.
+.
+.
+- \fB2018\fR
+\[->]
+Ivry-sur-Seine (France),
+ESIEA:
+.TI 10p
+Companieros & SII, \fBHandimanager Label\fR, 
+management of handicapped people
+.br
+.
+.
+.
+- \fB2016\fR
+\[->]
+Ivry-sur-Seine (France),
+ESIEA:
+.TI 10p
+\fBTOEIC\fR-915
+.br
+.
+.
+.
+- \fB2016\fR
+\[->]
+Igny (France),
+Lycée Saint-Nicolas:
+.TI 10p
+\fBBAFA\fR level 1
+.br
+.
+.
+.
+- \fB2015\fR
+\[->]
+Bourg-la-Reine (France),
+Institut Notre-Dame:
+.TI 10p
+\fBScientific High School Diploma\fR (Biology) with merit
+.br
+.
+.
+.
+- \fB2010-2012\fR
+\[->]
+Bourg-la-Reine (France),
+Institut Notre-Dame:
+.TI 10p
+\fBCambridge\fR (PET & FCE)
+.
+.
+.
+.CUST_HEAD "                          LANGUAGES                             "
+- \fBNative\fR: French
+.br
+- \fBBilingual\fR: English
+.br
+- \fBConversational\fR: Spanish
+.br
+- \fBBeginner\fR: Japanese, Ancient Greek, Latin
+.
+.
+.
+.CUST_HEAD "                           PROJECTS                                "
+- \fB2018-2019\fR
+\[->]
+TEEC-Eureka Effect
+.TI 10p
+Detecting understanding and information propagation within a group of students in videos of E-learning sessions
+.TI 10p
+\S'15'Publication at \fBACII2019\fR & Conference\S'0'
+.br 
+- \fB2018-2019\fR
+\[->]
+Inwibe
+.TI 10p
+Creation of a search engine based on natural language processing for Startup/Corporate's interest matching
+.br
+- \fB2018\fR
+\[->]
+\S'15'FlaminCode:\S'0' bash-3D-viz
+(\S'15'POSIX shell, bash, awk, sed\S'0')
+.TI 10p
+PoC & Contest: Manipulating 3D objects in the terminal
+.br
+- \fB2018\fR
+\[->]
+Smart Touch
+(\S'15'Python, OpenCV\S'0')
+.TI 10p
+Tactile Projector with vocal interface
+.br
+.
+.
+.
+.CUST_HEAD "                                SKILLS                                 "
+\fBSoftware:\fR 
+Office Suite,
+Vim,
+.LaTeX
+(1k lines) & Groff (3k)
+.br
+\fBOperating System:\fR
+Linux
+.br
+\fBProgramming\fR (lines of code):
+.br
+\[->]Mastered Languages:
+.TI 10p
+Axe Parser(40k lines),
+python(20k),
+asm z80(18k),
+C(5k),
+Ti-Basic(5k),
+[POSIX] shell(3k),
+Mathematica(2k),
+awk(1k)
+.br
+\[->]Learning:
+.TI 10p
+VHDL(8k),
+ruby(7k),
+C++(7k),
+vimscript(2k),
+java(900),
+sed(500),
+Haskell(200),
+RUST(200)
+.
+.
+.
+.CUST_HEAD "                            INTERESTS                             "
+\fBCircus\fR (14 years): Juggling
+.br
+\fBMusic\fR (4 years, self-taught): Guitar, Bass
+.br
+\fBRubik's Cube\fR: Speed Cubing
+.br
+\fBMagic\fR: Card manipulation
+.br
+\fBProgramming\fR
+.br
+\fBAstronomy\fR
+.
+.
+.
+.
+.br
+.sp 3
+\v'1'
+.FILLED_BOX "\ \ \ \ \ \ \ \ \ \ \ \ \ \fBASSOCIATIVE & PROFESSIONAL EXP.\fP \ \ \ \ \ \ \ \ \ \ \ \ \ \ " 2 darkpurple lightpurple white
+.sp 1
+.sp 1.5
+\[->]\fB2018-2019\fR
+\[->]
+Ivry-sur-Seine (France) & Bangkok (Thailand)
+.TI 10p
+\fBLaboratory\fR: ESIEA-\fBLDR\fR (machine Learning, big Data, mobile Robotics) & \fBKMUTT\fR (King Mongkut's University of Technology Thonburi)
+.TI 10p
+\fBRole\fR: "Student Researcher" in Artificial Intelligence
+.TI 10p
+\fBMission\fR: \fBTechnologies for Education & Teaching in Context\fR-
+Creating a facial tracker and emotional extractor to facilitate detection and analysis of the propagation of understanding in a group of students
+.TI 10p
+\fBPublication & Conference\fR: ACII2019 - \S'15'"Joint Analysis of verbal and nonverbal interactions in collaborative E-Learning"\S'0'
+(M. Piot, T. Alabarbe, J. Gonzalez, C. Le Bail, L. Prevost, J. Bourdeau, F.X. Bernard, M. Baker, F. Detienne)
+.TI 10p
+\fBTools\fR: python, pytorch, TensorFlow, Keras, OpenCV, Siamese Networks, Variational Auto-Encoders
+.br
+\[->]\fB2018-2019\fR
+\[->]
+Paris
+.TI 10p
+\fBFreelance\fR: \fBInwibe\fR
+.TI 10p
+\fBRole\fR: Natural Language Processing Developer (NLP) & Web Maintenance
+.TI 10p
+\fBMissions\fR: 
+Creation of a search engine based on Natural Language Processing technologies, to boost Corporate/Start-Up relationship, and maintenance of said Web Platform
+.TI 10p
+\fBTools\fR: python, gensim, spaCy, TensorFlow, Ruby on Rails, Django
+.br
+\[->]\fB2018-2019\fR
+\[->]
+Ivry-sur-Seine (France)
+.TI 10p
+\fBAssociation\fR: ESIEA-\fBDTRE\fR (Robotic Departement)
+.TI 10p
+\fBRole\fR: Active Member
+.TI 10p
+\fB Mission\fR: 
+Developing a robot featuring autonomous movement, and restoring an oscilloscope as a digital screen
+.br
+\[->]\fB2017-2018\fR
+\[->]
+Ivry-sur-Seine (France)
+\fB
+.TI 10p
+\fBLaboratory\fR: ESIEA-\fBLDR\fR (machine Learning, big Data, mobile Robotics)
+.TI 10p
+\fBRole\fR: "Student Researcher" in Artificial Intelligence
+.TI 10p
+\fBMission\fR: Transfer Learning applied to emotional detection in an image
+.TI 10p
+\fBTools\fR: python, OpenCV, TensorFlow, Keras, VGGFace
+.br
+\[->]\fB2016-2019\fR
+\[->]
+Ivry-sur-Seine (France)
+.TI 10p
+\fBAssociation\fR: ESIEA-\fBBDA\fR (Arts Office)
+.TI 10p
+\fBRole\fR: Active Member
+.TI 10p
+\fBMissions\fR: 
+Giving drawing, bass, and magic lessons. Giving magic shows. Active participation to the association's events and their communication
+.br
+\[->]\fB2016\fR (1 month)
+\[->]
+Paris
+.TI 10p
+\fBLaboratory\fR: ESIEA-\fBARNUM\fR (Digital World and Arts)
+.TI 10p
+\fBRole\fR: Researcher in Artificial Intelligence
+.TI 10p
+\fBMission\fR: 
+Research on Deep Learning technologies applied to text and image understanding and generation, in arts
+.TI 10p
+\fBTools\fR: Python, TensorFlow, Keras, Caffe, Theano
+.br
+\[->]\fB2015\fR (2 months)
+\[->]
+Bagneux
+.TI 10p
+\fBAssociation\fR: \fBPPCM\fR (Smallest Circus in the World)
+.TI 10p
+\fBRole\fR: Juggling Teacher
+.TI 10p
+\fBMission\fR: 
+Giving juggling classes to children, as a solidarity action
+.br
