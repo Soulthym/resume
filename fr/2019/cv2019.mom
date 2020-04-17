@@ -56,6 +56,7 @@ Fontenay-aux-Roses, 92260, FR
 \f[B]email\f[]: thybault.alabarbe@gmail.com
 .br
 \f[B]GitHub\f[]: https://github.com/Soulthym
+.sp -0.7
 .
 .
 .
@@ -117,6 +118,7 @@ Bourg-la-Reine,
 Institut Notre-Dame:
 .TI 10p
 \f[B]Cambridge\f[] (PET et FCE)
+.sp -0.7
 .
 .
 .
@@ -126,10 +128,22 @@ Institut Notre-Dame:
 - \f[B]Courant\f[]: Espagnol
 .br
 - \f[B]Débutant\f[]: Japonais, Grec Ancien, Latin
+.sp -0.7
+.
+.
+.
+.
+.
 .
 .
 .
 .CUST_HEAD "                              PROJETS                                "
+- \fB2019-2020\fR
+\[->]
+NCM-Forest
+.TI 10p
+Etude comparative de l'implémentation de l'algorithme NCM-Forest sur FPGA et GPU
+.br
 - \f[B]2018-2019\f[]
 \[->]
 TEEC-Eureka Effect
@@ -157,7 +171,7 @@ Smart Touch
 (\*[SLANT]Python, OpenCV\*[SLANTX])
 .TI 10p
 Projecteur Tactile à commande vocale
-.br
+.sp -0.7
 .
 .
 .

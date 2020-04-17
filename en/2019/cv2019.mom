@@ -136,6 +136,12 @@ Institut Notre-Dame:
 .
 .
 .CUST_HEAD "                           PROJECTS                                "
+- \fB2019-2020\fR
+\[->]
+NCM-Forest
+.TI 10p
+Compative study of FPGAs and GPUs for the implementatioon of the NCM-Forest algorithm
+.br
 - \fB2018-2019\fR
 \[->]
 TEEC-Eureka Effect
